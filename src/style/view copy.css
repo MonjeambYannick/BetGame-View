@@ -1,0 +1,211 @@
+.view {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.view-grouplist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.view-controlls {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 100px;
+
+    border: 1px solid white;
+
+    border-radius: 10px;
+}
+
+.view-controlls-btn{
+    width: 200px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    color: #1c1c1c;
+    font-size: 28px;
+
+    position: relative;
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    user-select: none
+}
+
+.view-controlls-btn::after {
+    content: "";
+    
+    width: 0%;
+    height: 5px;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: #6002EE;
+
+    transition: width 250ms ease-in-out;
+}
+
+.view-controlls-btn:hover::after {
+    width: 100%;
+}
+
+
+.view-controlls-btn-create {
+    margin-left: calc((100% - (2*200px)) / 3);
+    margin-right: calc((100% - (2*200px)) / 6);
+}
+
+.view-controlls-btn-join {
+
+    margin-left: calc((100% - (2*200px)) / 6);
+    margin-right: calc((100% - (2*200px)) / 3);
+}
+
+.view .popup {
+
+    display: block;
+
+    height: 0;
+    margin-top: 20px;
+
+    width: 80%;
+
+    background-color: white;
+    color: black;
+
+    overflow:hidden;
+
+    border-radius: 10px;
+}
+
+.view .popup.show {
+    height: auto;
+}
+
+
+.view .popup.show div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+
+}
+.view .popup.show div input {
+    margin-top: 50px;
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    border-bottom: 2px solid #1c1c1c;
+    padding-left: 10px;
+    font-size: 24px;
+}
+.view .popup.show .view-popup-btn {
+    margin-top: 50px;
+    width: 40%;
+    height: 40px;
+    background-color: #6002ee;
+    color: white;
+    border-radius: 5px;
+    user-select: none;
+
+    transition: all 150ms ease-in-out;
+
+    margin-bottom: 40px;
+}
+.view .popup.show .view-popup-btn:hover {
+    cursor: pointer;
+}
+.view .popup.show .view-popup-btn:active {
+    background-color: black;
+    letter-spacing: 1px;
+}
+
+.grouplist-obj {
+    
+    margin-top: 20px;
+    
+    width: 80%;
+    height: 80px;
+    
+    background-color: white;
+    color: #1c1c1c;
+
+    display: flex;
+    flex-direction: row;
+    
+    font-size: 32px;
+
+    border-radius: 10px;
+}
+
+.grouplist-obj > div {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grouplist-obj div i {
+    color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: background ease-in-out 100ms;
+    transition: color 200ms ease-in-out;
+}
+
+.grouplist-obj div i:hover {
+
+    color: white;
+    background-color: #1c1c1c;
+
+}
+
+.grouplist-obj div i:active {
+    font-size: 34px;
+}
+
+
+
+.grouplist-obj .grouplist-obj-settings {
+    flex-grow: 1;
+}
+
+.grouplist-obj .grouplist-obj-name {
+    flex-grow: 4;
+}
+
+.grouplist-obj .grouplist-obj-open {
+    flex-grow: 1;
+}
+
+.grouplist-obj .grouplist-obj-placment {
+    flex-grow: 2;
+}

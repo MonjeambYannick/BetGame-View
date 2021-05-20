@@ -1,0 +1,50 @@
+.view-grouplist-list {
+    margin-top: 1em;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grouplist-obj {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 3em;
+
+    background-color: white;
+    color: #1c1c1c;
+
+    border-radius: 1em;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.grouplist-obj div {
+
+
+}
+
+.grouplist-obj div i {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.grouplist-obj div i:hover {
+
+    color: white;
+    background-color: #1c1c1c;
+
+}
+
+.grouplist-obj div i:active {
+}
+
+

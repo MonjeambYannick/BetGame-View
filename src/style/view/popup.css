@@ -1,0 +1,60 @@
+.view .popup {
+
+    display: block;
+
+    height: 0;
+    width: 80%;
+
+    background-color: white;
+    color: black;
+
+    overflow:hidden;
+
+    border-radius: 10px;
+}
+
+.view .popup.show {
+    height: auto;
+}
+
+.view .popup.show div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+}
+
+.view .popup.show div input {
+    margin-top: 2em;
+
+    width: 80%;
+    height: 40px;
+    
+    background-color: white;
+
+    border-bottom: 2px solid #1c1c1c;
+    
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    font-size: 0.75em;
+}
+
+.view .popup.show .view-popup-btn {
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    width: 40%;
+    height: 40px;
+
+    background-color: #6002ee;
+    color: white;
+
+    border-radius: 5px;
+    user-select: none;
+}

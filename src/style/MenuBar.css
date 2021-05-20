@@ -1,0 +1,11 @@
+.menubar {
+    background: #6002EE;
+}
+
+.menu-item {
+    user-select: none;
+}
+
+.noclick {
+    cursor: normal !important;
+}

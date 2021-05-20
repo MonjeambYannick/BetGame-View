@@ -1,0 +1,26 @@
+.view-controlls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.view-controlls-btn {
+    margin-left: 1em;
+    margin-right: 1em;
+
+    width: 5em;
+    height: 2.5em;
+
+    background-color: white;
+    color: #1c1c1c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    user-select: none;
+}
