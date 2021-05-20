@@ -3,14 +3,14 @@ const BACKEND_PORT = 80
 
 export let FETCH_GET_AUTHORIZED = async (route, token) => {
 
-    let response =  await fetch((BACKEND_HOST + ':' + BACKEND_PORT + route), {method: "GET", mode: "cors", headers: {authorization: token}})
+    let response =  await fetch((BACKEND_HOST + route), {method: "GET", mode: "cors", headers: {authorization: token}})
 
     return await response.json()
 }
 
 export let FETCH_POST_AUTHORIZED = async (route, token, data) => {
 
-    let response = await fetch((BACKEND_HOST + ':' + BACKEND_PORT + route), {
+    let response = await fetch((BACKEND_HOST + route), {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -27,14 +27,14 @@ export let FETCH_POST_AUTHORIZED = async (route, token, data) => {
 
 export let FETCH_GET = async (route, data) => {
     
-    let response =  await fetch((BACKEND_HOST + ':' + BACKEND_PORT + route), {method: "GET", mode: "cors"})
+    let response =  await fetch((BACKEND_HOST + route), {method: "GET", mode: "cors"})
 
     return await response.json()
 }
 
 export let FETCH_POST = async (route, data) => {
  
-    let response = await fetch((BACKEND_HOST + ':' + BACKEND_PORT + route), {
+    let response = await fetch((BACKEND_HOST + route), {
         method: 'POST',
         mode: 'cors',
         headers: {
