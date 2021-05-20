@@ -18,6 +18,7 @@ import './style/MenuBar.css'
 import './style/layout.css'
 import './style/login-register.css'
 
+import {FETCH_GET_AUTHORIZED} from './components/fetch-utils'
 
 let getcookie = (callback) => {
     let cookies = GetCookie() 
@@ -28,19 +29,6 @@ let getcookie = (callback) => {
         }
     })
     return{loggedin: (token!=0), token: token}
-}
-
-let t = async (token) => {
-
-    let headers = new Headers()
-
-    headers.append('Authorization', token);
-    
-    let data = await fetch('http://localhost:4000/api/', {headers: headers})
-    let res = await data.json()
-    console.log('====================================');
-    console.log(res);
-    console.log('====================================');
 }
 
 function App() {
@@ -65,7 +53,7 @@ function App() {
                     
 
                     <div id={2}>
-                        <div  onClick={() => t(auth.token)}>Button</div>
+                        Page 2
                     </div>
                 </Pages>
             </div>    
