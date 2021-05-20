@@ -1,5 +1,5 @@
 const BACKEND_HOST = 'https://betgame-server.herokuapp.com'
-const BACKEND_PORT = 4000
+const BACKEND_PORT = 80
 
 export let FETCH_GET_AUTHORIZED = async (route, token) => {
 
